@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrey | JS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Creepster&family=Jersey+15&family=Rubik+Puddles&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <script>
+        alert('something is not right...')
+        alert('???')
+    </script>
+    <h1 style="font-size:55px">??????????????????????????????????????????????????????????????</h1>
+    <p><a style="color:rgb(255, 218, 174)" href="leave.html" target="_blank" onclick="alert('do not continue.')">NOT WORKING</a></p>
+    
+    <script>
+        let notContinued = true;
+
+        function getInput() {
+            let inputValue = prompt('What should you NOT do.');
+            if (inputValue == 'continue') {
+                console.log('correct.')
+                notContinued = true;
+            } else {
+                console.log('pay attention.')
+                notContinued = false;
+            }
+
+            let foundOrNot;
+            if (notContinued == true) {
+                foundOrNot = 'foundout.html';
+            } else {
+                foundOrNot = 'unfound.html';
+            }
+
+            // TESTING console.log(foundOrNot);
+
+            document.getElementById('conditionalButton').onclick = function() {
+                console.log('Button clicked!');
+                console.log('Redirecting to: ', foundOrNot);
+                window.location.href = foundOrNot;
+            };
+        }
+
+        function pFun() {
+            var naahaamaan=document.getElementById('p-fun');
+            naahaamaan.innerHTML='Do not look for anything'
+            naahaamaan.style.color='red';
+        }
+
+        function askName() {
+            var nameReturn=document.getElementById('ask-name');
+            var name= prompt('Who are you.', 'answer me.');
+            if (name=='') {
+                alert('TELL ME.');
+            } else {
+                nameReturn.innerHTML = 'Well, ' + name + ' I know something.'
+                whatYouKnow=prompt('Wanna know what I know?')
+                if (whatYouKnow=='no') {
+                    alert('You will now in time anyway...')
+                } if (whatYouKnow=='yes') {
+                    alert('I am in your walls.')
+                } else {
+                    alert('Do not care. ANSWER ME.')
+                    askName()
+                }
+            }
+        }
+    </script>
+    
+    <button onclick="getInput()"><span style="color:rgb(255, 218, 174); font-family:Tektur;">What should you not do.</span></button>
+    <br>
+    <br>
+    <button onclick="askName()">Who are you.</button>
+    <p id="ask-name"></p>
+    <p>Lets do some math! (the site is back!)</p>
+    <p>809255821x3x3</p>
+    <button onclick="document.getElementById('add').innerHTML=809255821*3*3"><span style="color:rgb(240, 240, 240)">just a</span><br>number<br><span style="color:rgb(240, 240, 240)">???</span></button>
+    <p id="add"></p>
+
+    <h2>We can also show the date and time! (This is normal!)</h2>
+    <button onclick="document.getElementById('date').innerHTML=Date()">This will show the date!</button>
+    <p id="date"></p>
+    <h2>This site is absolutely normal.</h2>
+    <button onclick="document.getElementById('change-text').innerHTML='This is ALL completly not normal.'"><span style="color:rgb(255, 218, 174)">all normal.</span></button>
+    <p id="change-text">This is ALL completly normal.</p>
+    <br>
+    <h2>Everything is fine in this site!</h2>
+    <p>The button below should pop up the text: Hello World!</p>
+    <button onclick="pFun()">filler.texting</button>
+    <p id="p-fun"></p>
+    <h2>I have a question...</h2>
+    <button onclick="askQuestion()">yaloo</button>
+    <p id="question"></p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button id="conditionalButton"><span style="color:aquamarine">w</span><span style="color:blue">H</span><span style="color:blueviolet">a</span><span style="color:aqua">T</span><span style="color:burlywood"> y</span><span style="color:chartreuse">O</span><span style="color:antiquewhite">U</span><span style="color:beige">F</span><span style="color:aquamarine">O</span><span style="color:beige">U</span><span style="color:blueviolet">n</span><span style="color:azure">d</span></button>
+</body>
+</html>

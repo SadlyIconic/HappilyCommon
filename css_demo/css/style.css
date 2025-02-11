@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+}
+
+.container {
+    margin: 0 auto;
+    border: 1px solid white;
+    width: 1000px;
+    padding: 1px;
+    background-color: rgb(69, 69, 69)
+}
+.nav {
+    list-style:none;
+    text-align:center
+}
+.nav li {
+    display: inline;
+    margin-right:120px
+}
+
+.vis {
+    font-size:25px;
+    color:rgb(100, 255, 255)
+}
+
+.span1 {
+    color:rgb(255, 69, 69)
+}
+
+.span2 {
+    color:rgb(255, 69, 69);
+    font-family:'Rubik Puddles',Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif
+}
